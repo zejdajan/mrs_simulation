@@ -23,7 +23,7 @@ This platforms can be additionaly equipped with several sensors (rangefinders, 2
 To start the prepared example of Gazebo world call:
 
 ```bash
-roslaunch mrs_simulation simulation.launch world_file:='$(find mrs_gazebo_common)/worlds/grass_plane.world' gui:=true
+roslaunch mrs_simulation simulation.launch world_file:='$(find mrs_gazebo_common_resources)/worlds/grass_plane.world' gui:=true
 ```
 
 At this point the Gazebo world will only contain the environment with grass plane but with no vehicles yet.
