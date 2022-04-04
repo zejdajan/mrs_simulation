@@ -310,7 +310,7 @@
     mesh_scale="${mesh_scale}"
     parent="base_link"
     color="Black">
-    <origin xyz="${arm_length * cos30} -${arm_length * sin30} ${arm_height - body_height/2}" rpy="0 -0.52 0" />
+    <origin xyz="${arm_length * cos30} -${arm_length * sin30} ${arm_height - body_height/2}" rpy="0.0 -0.52 1.04" />
   </xacro:visual_macro>
 
   <xacro:visual_macro
@@ -320,7 +320,7 @@
     mesh_scale="${mesh_scale}"
     parent="base_link"
     color="Black">
-    <origin xyz="0 -${arm_length} ${arm_height - body_height/2}" rpy="0.0 0.52 1.04" />
+    <origin xyz="0 -${arm_length} ${arm_height - body_height/2}" rpy="0 0.52 0" />
   </xacro:visual_macro>
 
   <xacro:visual_macro
@@ -330,7 +330,7 @@
     mesh_scale="${mesh_scale}"
     parent="base_link"
     color="Black">
-    <origin xyz="-${arm_length * cos30} -${arm_length * sin30} ${arm_height - body_height/2}" rpy="0 0.52 -1.04" />
+    <origin xyz="-${arm_length * cos30} -${arm_length * sin30} ${arm_height - body_height/2}" rpy="0 -0.52 -1.04" />
   </xacro:visual_macro>
 
   <xacro:visual_macro
@@ -340,7 +340,7 @@
     mesh_scale="${mesh_scale}"
     parent="base_link"
     color="Black">
-    <origin xyz="${arm_length * cos30} ${arm_length * sin30} ${arm_height - body_height/2}" rpy="0 -0.52 2.09439510239" />
+    <origin xyz="${arm_length * cos30} ${arm_length * sin30} ${arm_height - body_height/2}" rpy="0 0.52 2.09439510239" />
   </xacro:visual_macro>
 
   <xacro:visual_macro
@@ -350,7 +350,7 @@
     mesh_scale="${mesh_scale}"
     parent="base_link"
     color="Black">
-    <origin xyz="0 ${arm_length} ${arm_height - body_height/2}" rpy="0 -0.52 -2.09439510239" />
+    <origin xyz="0 ${arm_length} ${arm_height - body_height/2}" rpy="0 -0.52 -3.1415" />
   </xacro:visual_macro>
 
   <xacro:visual_macro
@@ -360,7 +360,7 @@
     mesh_scale="${mesh_scale}"
     parent="base_link"
     color="Black">
-    <origin xyz="-${arm_length * cos30} ${arm_length * sin30} ${arm_height - body_height/2}" rpy="0 0.52 -3.1415" />
+    <origin xyz="-${arm_length * cos30} ${arm_length * sin30} ${arm_height - body_height/2}" rpy="0 0.52 -2.09439510239" />
   </xacro:visual_macro>
   <!--}-->
 
@@ -383,7 +383,7 @@
     mesh_file="${prop_mesh_file}"
     mesh_scale="${mesh_scale_prop_cw}"
     color="White">
-    <origin xyz="0 -${arm_length} ${arm_height + rotor_offset_top - body_height/2}" rpy="0.0 0.52 1.04" />
+    <origin xyz="0 -${arm_length} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 0.52 0" />
     <xacro:insert_block name="rotor_inertia" />
   </xacro:vertical_rotor>
 
@@ -405,7 +405,7 @@
     mesh_file="${prop_mesh_file}"
     mesh_scale="${mesh_scale_prop_ccw}"
     color="White">
-    <origin xyz="0 ${arm_length} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 -0.52 -2.09439510239" />
+    <origin xyz="0 ${arm_length} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 -0.52 -3.1415" />
     <xacro:insert_block name="rotor_inertia" />
   </xacro:vertical_rotor>
 
@@ -427,7 +427,7 @@
     mesh_file="${prop_mesh_file}"
     mesh_scale="${mesh_scale_prop_cw}"
     color="White">
-    <origin xyz="${arm_length * cos30} ${arm_length * sin30} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 -0.52 2.09439510239" />
+    <origin xyz="${arm_length * cos30} ${arm_length * sin30} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 0.52 2.09439510239" />
     <xacro:insert_block name="rotor_inertia" />
   </xacro:vertical_rotor>
 
@@ -449,7 +449,7 @@
     mesh_file="${prop_mesh_file}"
     mesh_scale="${mesh_scale_prop_ccw}"
     color="White">
-    <origin xyz="-${arm_length * cos30} -${arm_length * sin30} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 0.52 -1.04" />
+    <origin xyz="-${arm_length * cos30} -${arm_length * sin30} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 -0.52 -1.04" />
     <xacro:insert_block name="rotor_inertia" />
   </xacro:vertical_rotor>
 
@@ -470,7 +470,7 @@
     mesh_file="${prop_mesh_file}"
     mesh_scale="${mesh_scale_prop_ccw}"
     color="White">
-    <origin xyz="${arm_length * cos30} -${arm_length * sin30} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 -0.52 0" />
+    <origin xyz="${arm_length * cos30} -${arm_length * sin30} ${arm_height + rotor_offset_top - body_height/2}" rpy="0.0 -0.52 1.04" />
     <xacro:insert_block name="rotor_inertia" />
   </xacro:vertical_rotor>
 
@@ -491,7 +491,7 @@
     mesh_file="${prop_mesh_file}"
     mesh_scale="${mesh_scale_prop_cw}"
     color="White">
-    <origin xyz="-${arm_length * cos30} ${arm_length * sin30} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 0.52 -3.1415" />
+    <origin xyz="-${arm_length * cos30} ${arm_length * sin30} ${arm_height + rotor_offset_top - body_height/2}" rpy="0 0.52 -2.09439510239" />
     <xacro:insert_block name="rotor_inertia" />
   </xacro:vertical_rotor>
   <!--}-->
