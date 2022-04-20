@@ -1,3 +1,4 @@
+
 enable_rangefinder: [False, 'Add a laser rangefinder (Garmin) pointing down', [f450, f550,fully_actuated, t650, x500, f330, eaglemk2, brus, naki]]
 enable_rangefinder_up: [False, 'Add a laser rangefinder (Garmin) pointing up', [f450, f550,fully_actuated, t650, naki]]
 enable_teraranger: [False, 'Add a laser rangefinder (Teraranger) to the vehicle', [f450, f550,fully_actuated, t650]]
